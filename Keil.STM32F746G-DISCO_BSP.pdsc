@@ -23,8 +23,11 @@
       - modify app_main_thread (replace loop forever)
       - add DWARF-5 debug information
       - add RTE_Components.h files
-      - add dbgconf files for the Blinky example.
-      - updated RTE_Components.h file.	  
+      - add dbgconf files for the Blinky example
+      - update RTE_Components.h file
+      - add define for LED LD1 (USE_LED_LD1)
+      - update README.md file
+      - add generated output files
     </release>
   </releases>
 

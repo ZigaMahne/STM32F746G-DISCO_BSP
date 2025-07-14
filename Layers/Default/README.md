@@ -38,6 +38,8 @@ Refer to ["Configure STM32 Devices with CubeMX"](https://open-cmsis-pack.github.
 
 > Note: [Schematics (Rev.B-02)](https://www.st.com/resource/en/schematic_pack/mb1191-f746ngh6-b02_schematic.pdf) error: The Arduino connector pins D10 and D5 are connected incorrectly. D10 should be connected to PA8 and D5 to PI0, as it is described in [User Manual](https://www.st.com/resource/en/user_manual/um1907-discovery-kit-for-stm32f7-series-with-stm32f746ng-mcu-stmicroelectronics.pdf)
 
+> Note: Check Board.clayer.yml file that define **USE_LED_LD1** in not defined. Pin PI1(SPI2_SCK) is used for SPI.  
+
 Reference to [Arduino UNO connector description](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/#arduino-shield).
 
 ### CMSIS-Driver Virtual I/O mapping
