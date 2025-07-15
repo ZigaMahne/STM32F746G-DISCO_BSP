@@ -1,7 +1,8 @@
 [![Version](https://img.shields.io/github/v/release/Open-CMSIS-Pack/STM32F746G-DISCO_BSP)](https://github.com/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/releases/latest)
 [![License](https://img.shields.io/github/license/Open-CMSIS-Pack/STM32F746G-DISCO_BSP?label)](https://github.com/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/blob/main/LICENSE)
 [![Examples Build Test](https://img.shields.io/github/actions/workflow/status/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/Test-Examples.yml?logo=arm&logoColor=0091bd&label=Examples%20Build%20Test)](./.ci)
-[![MDK-Middleware Build Test](https://img.shields.io/github/actions/workflow/status/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/Test-MDK-Middleware-RefApps.yml?logo=arm&logoColor=0091bd&label=MDK-Middleware%20Build%20Test)](./.ci)
+[![MDK-Middleware (Default) Build Test](https://img.shields.io/github/actions/workflow/status/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/Test-MDK-Middleware-RefApps.yml?logo=arm&logoColor=0091bd&label=MDK-Middleware%20(Default)%20Build%20Test)](./.ci)
+[![MDK-Middleware (SPI2) Build Test](https://img.shields.io/github/actions/workflow/status/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/Test-MDK-Middleware-RefApps_spi.yml?logo=arm&logoColor=0091bd&label=MDK-Middleware%20(SPI2)%20Build%20Test)](./.ci)
 
 # STM32F746G-DISCO_BSP
 
@@ -42,7 +43,8 @@ The repository uses GitHub Actions to generate the pack and build examples:
 
 - `.github/workflows/pack.yml` based on [Open-CMSIS-Pack/gen-pack-action](https://github.com/Open-CMSIS-Pack/gen-pack-action) generates pack using the [Generate software pack](#generate-software-pack) scripts.
 - `.github/workflows/Test-Examples.yml` test build of examples.
-- `.github/workflows/Test-MDK-Middleware-RefApps.yml` test build of MDK Middleware Reference Applications with different compilers.
+- `.github/workflows/Test-MDK-Middleware-RefApps.yml` test build of MDK Middleware Reference Applications (Default layer) with different compilers.
+- `.github/workflows/Test-MDK-Middleware-RefApps_spi.yml` test build of MDK Middleware Reference Applications (SPI2 layer) with different compilers.
 
 ## Issues
 
