@@ -13,10 +13,12 @@
   </licenseSets>
 
   <releases>
-    <release version="1.0.2-dev">
+    <release version="1.0.3-dev">
       Active development ...
       CMSIS VIO Driver:
       - add support for LED LD1
+      Layers:
+      -- add SPI2 layer
       Blinky project:
       - specify thread names using thread attributes
       - rename thread IDs
@@ -78,6 +80,7 @@
 
   <csolution>
     <clayer type="Board" path="Layers/Default" file="Board.clayer.yml" copy-to="Board/STM32F746G-DISCO" condition="STM32F746G-DISCO"/>
+    <clayer type="Board" path="Layers/SPI2"    file="Board.clayer.yml" copy-to="Board/STM32F746G-DISCO" condition="STM32F746G-DISCO"/>
   </csolution>
 
   <boards>

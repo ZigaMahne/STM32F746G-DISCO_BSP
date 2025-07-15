@@ -18,6 +18,20 @@ The **STMicroelectronics STM32F746G-DISCO Board Support Pack (BSP)**:
 | CMSIS_MCI                     | CMSIS-Driver MCI connected to microSD card slot (CN3)
 | CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_FS connector (CN13)
 | CMSIS_USB_Host                | CMSIS-Driver USB Host connected to USB_OTG_HS connector (CN12)
+| CMSIS_VIO                     | CMSIS-Driver VIO connected to LED (LD1) and USER button (B1)
+| STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN14)
+| ARDUINO_UNO_D2..D12, D14..D19 | CMSIS-Driver GPIO connected to Arduino digital I/O pins D2..D12 and D14..D19
+| ARDUINO_UNO_I2C               | CMSIS-Driver I2C connected to Arduino I2C pins D20..D21
+| ARDUINO_UNO_UART              | CMSIS-Driver USART connected to Arduino UART pins D0..D1
+
+- [Board Layer](https://github.com/Open-CMSIS-Pack/STM32F746G-DISCO_BSP/tree/main/Layers/SPI2) for device-agnostic [Reference Applications](https://open-cmsis-pack.github.io/cmsis-toolbox/ReferenceApplications/) that implements these API interfaces:
+
+| Provided API Interface        | Description
+|:------------------------------|:------------------------------------------------------------------------------
+| CMSIS_ETH                     | CMSIS-Driver Ethernet connected to Ethernet RJ45 connector (CN9)
+| CMSIS_MCI                     | CMSIS-Driver MCI connected to microSD card slot (CN3)
+| CMSIS_USB_Device              | CMSIS-Driver USB Device connected to USB_OTG_FS connector (CN13)
+| CMSIS_USB_Host                | CMSIS-Driver USB Host connected to USB_OTG_HS connector (CN12)
 | CMSIS_VIO                     | CMSIS-Driver VIO connected to USER button (B1)
 | STDIN, STDOUT, STDERR         | Standard I/O connected to Virtual COM port on ST-LINK connector (CN14)
 | ARDUINO_UNO_D2..D10, D14..D19 | CMSIS-Driver GPIO connected to Arduino digital I/O pins D2..D10 and D14..D19
