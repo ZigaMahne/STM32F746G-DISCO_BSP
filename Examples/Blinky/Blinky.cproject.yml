@@ -3,7 +3,6 @@ project:
 
   # Project define
   define:
-    - USE_LED_LD1
     - OS_IDLE_THREAD_NAME: \"Idle\"
     - OS_TIMER_THREAD_NAME: \"Timer\"
 

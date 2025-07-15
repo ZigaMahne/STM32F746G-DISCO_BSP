@@ -31,6 +31,8 @@ The table below lists the physical I/O mapping of this CMSIS-Driver VIO implemen
 |:--------------|:---------------|:---------------------|:------
 | vioBUTTON0    | vioSignalIn.0  | USER button (B1)     | PI11
 | vioLED0       | vioSignalOut.0 | LED Green   (LD1)    | PI1
+
+Note: The pin LED LD1 conflict with the pin SPI2_SCK on the board. The #define VIO_DISABLE_LD1 disables this LED.
 */
 
 #include "cmsis_vio.h"
@@ -68,7 +70,7 @@ typedef struct {
 #if !defined CMSIS_VOUT
 // VOUT Configuration
 static const pinCfg_t outputCfg[] = {
-#if defined USE_LED_LD1
+#if !defined VIO_DISABLE_LD1
 //  signal,     pin,                   pull resistor,      active state
   { vioLED0,    GPIO_PIN_ID_PORTI(1),  ARM_GPIO_PULL_NONE, VIO_ACTIVE_HIGH }
 #endif
